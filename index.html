@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Ayush Raj | Web Developer Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        overscroll-behavior: none;
+      }
+    </style>
+    <script type="importmap">
+    {
+        "imports": {
+            "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+            "react": "https://aistudiocdn.com/react@^19.1.1",
+            "react/": "https://aistudiocdn.com/react@^19.1.1/",
+            "chess.js": "https://cdn.jsdelivr.net/npm/chess.js@1.0.0-beta.8/dist/chess.mjs",
+            "react-chessboard": "https://cdn.jsdelivr.net/npm/react-chessboard@4.6.0/+esm"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Portfolio</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <a href="#contact" class="btn btn-primary nav__btn">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__content">
+                    <span class="hero__tag">HELLO I'M</span>
+                    <h1 class="hero__title">Ayush</h1>
+                    <p class="hero__subtitle">A Full-Stack Developer & AI/ML Engineer</p>
+                    <div class="hero__buttons animation-element">
+                        <a href="assets/my-cv.pdf" download class="btn btn-primary">Download CV</a>
+                        <a href="#portfolio" class="btn btn-secondary">My Work</a>
+                    </div>
+                </div>
+                <div class="hero__image-wrapper animation-element">
+                    <img src="assets/profileimg1.png" alt="Ayush Raj" class="hero__image">
+                    <div class="hero__image-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about__container container">
+                <div class="about__text-content animation-element">
+                    <h2 class="section__title">About Me</h2>
+                    <p class="about__description">
+                        I am a passionate Full-Stack Developer and AI/ML enthusiast dedicated to building innovative and efficient solutions. With a strong foundation in computer science, I enjoy tackling complex problems and turning ideas into tangible, user-friendly applications.
+                    </p>
+                    <div class="about__buttons">
+                        <a href="#contact" class="btn btn-primary">Hire Me!</a>
+                        <a href="#portfolio" class="btn btn-secondary">My Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <div class="container skills__grid-layout">
+                 <div class="skills__content">
+                    <h2 class="section__title animation-element">Technical Skills</h2>
+                    <div class="tech-stack">
+                        <div class="tech-stack__category animation-element">
+                            <h3 class="tech-stack__title">Core Stack</h3>
+                            <div class="tech-stack__icons">
+                                <div class="tech-stack__icon" title="React"><i class="devicon-react-original"></i></div>
+                                <div class="tech-stack__icon" title="Node.js"><i class="devicon-nodejs-plain"></i></div>
+                                <div class="tech-stack__icon" title="Express"><i class="devicon-express-original"></i></div>
+                                <div class="tech-stack__icon" title="Vite"><i class="devicon-vitejs-plain"></i></div>
+                                <div class="tech-stack__icon" title="Git"><i class="devicon-git-plain"></i></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack__category animation-element">
+                            <h3 class="tech-stack__title">UI & Styling</h3>
+                            <div class="tech-stack__icons">
+                                <div class="tech-stack__icon" title="Tailwind CSS"><i class="devicon-tailwindcss-plain"></i></div>
+                                <div class="tech-stack__icon" title="Bootstrap"><i class="devicon-bootstrap-plain"></i></div>
+                                <div class="tech-stack__icon" title="Three.js"><i class="devicon-threejs-original"></i></div>
+                            </div>
+                        </div>
+                        <div class="tech-stack__category animation-element">
+                            <h3 class="tech-stack__title">Databases & Tools</h3>
+                            <div class="tech-stack__icons">
+                                <div class="tech-stack__icon" title="MySQL"><i class="devicon-mysql-plain"></i></div>
+                                <div class="tech-stack__icon" title="MongoDB"><i class="devicon-mongodb-plain"></i></div>
+                                <div class="tech-stack__icon" title="Oracle"><i class="devicon-oracle-original"></i></div>
+                                <div class="tech-stack__icon" title="Supabase"><i class="fas fa-database"></i></div>
+                                <div class="tech-stack__icon" title="Cloudflare"><i class="fas fa-cloud"></i></div>
+                                <div class="tech-stack__icon" title="Jupyter"><i class="devicon-jupyter-plain"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__empty-space">
+                    <div id="phone-app-root"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tech-banner" aria-hidden="true">
+             <div class="scroller">
+                <div class="scroller__inner">
+                    <div class="tech-item"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
+                    <div class="tech-item"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
+                    <div class="tech-item"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+                    <div class="tech-item"><i class="devicon-react-original"></i><span>React</span></div>
+                    <div class="tech-item"><i class="devicon-nodejs-plain"></i><span>Node.js</span></div>
+                    <div class="tech-item"><i class="devicon-python-plain"></i><span>Python</span></div>
+                    <div class="tech-item"><i class="devicon-cplusplus-plain"></i><span>C++</span></div>
+                    <div class="tech-item"><i class="devicon-tailwindcss-plain"></i><span>Tailwind CSS</span></div>
+                    <div class="tech-item"><i class="devicon-mongodb-plain"></i><span>MongoDB</span></div>
+                    <div class="tech-item"><i class="devicon-git-plain"></i><span>Git</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <h2 class="section__title text-center animation-element">What I Do & My Interests</h2>
+            <div class="services__container container grid">
+                <div class="service__card animation-element">
+                    <i class="fas fa-laptop-code service__icon"></i> 
+                    <h3 class="service__title">Full-Stack Web Development</h3>
+                    <p class="service__description">Crafting dynamic, responsive, and scalable web applications from front-end user interfaces to back-end server logic and databases.</p>
+                </div>
+                <div class="service__card animation-element">
+                    <i class="fas fa-brain service__icon"></i> 
+                    <h3 class="service__title">AI & Machine Learning</h3>
+                    <p class="service__description">Developing intelligent systems and models for data analysis, pattern recognition, and predictive analytics.</p>
+                </div>
+                <div class="service__card animation-element">
+                    <i class="fas fa-microchip service__icon"></i>
+                    <h3 class="service__title">Robotics</h3>
+                    <p class="service__description">Interested in building real-world robots and experiences to create better human automation and solve complex problems in the physical world.</p>
+                </div>
+                <div class="service__card animation-element">
+                    <i class="fas fa-terminal service__icon"></i>
+                    <h3 class="service__title">Coding & Problem Solving</h3>
+                    <p class="service__description">Solving complex algorithms and data structures problems to build efficient and optimized solutions for various challenges.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats section">
+            <div class="stats__container container grid">
+                <div class="stat__item text-center animation-element">
+                    <i class="fas fa-trophy stat__icon"></i>
+                    <h3 class="stat__number" data-target="3">0</h3>
+                    <p class="stat__label">Hackathon Wins</p>
+                </div>
+                <div class="stat__item text-center animation-element">
+                    <i class="fas fa-tasks stat__icon"></i>
+                    <h3 class="stat__number" data-target="10">0</h3>
+                    <p class="stat__label">Projects Completed</p>
+                </div>
+                <div class="stat__item text-center animation-element">
+                    <i class="fas fa-code stat__icon"></i>
+                    <h3 class="stat__number" data-target="150">0</h3>
+                    <p class="stat__label">LeetCode Problems Solved</p>
+                </div>
+                <div class="stat__item text-center animation-element">
+                    <i class="fas fa-certificate stat__icon"></i>
+                    <h3 class="stat__number" data-target="3">0<span class="plus-sign">+</span></h3>
+                    <p class="stat__label">Industry Certifications</p>
+                </div>
+            </div>
+
+            <div class="stats__container stats__container--secondary container grid">
+                <div class="stat__item text-center animation-element">
+                    <i class="fas fa-rocket stat__icon"></i>
+                    <h3 class="stat__number" data-target="3">0</h3>
+                    <p class="stat__label">Active Projects</p>
+                </div>
+                <div class="stat__item text-center animation-element">
+                    <i class="fas fa-lightbulb stat__icon"></i>
+                    <h3 class="stat__number" data-target="5">0</h3>
+                    <p class="stat__label">Future Project Plans</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title text-center animation-element">Our Portfolio</h2>
+            <div class="portfolio__filters container text-center animation-element">
+                <button class="portfolio__filter-btn active" data-filter="all">All</button>
+                <button class="portfolio__filter-btn" data-filter="web">Web Design</button>
+                <button class="portfolio__filter-btn" data-filter="app">App</button>
+                <button class="portfolio__filter-btn" data-filter="ai-ml">AI & ML</button>
+            </div>
+            <div class="portfolio__container container grid">
+                <!-- Web Design -->
+                <div class="portfolio__item" data-category="web">
+                    <img src="assets/caption-generator.png" alt="Caption Generator" class="portfolio__img">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__title">Caption Generator</h3>
+                    </div>
+                </div>
+                <div class="portfolio__item" data-category="web">
+                    <img src="assets/diesa.png" alt="Diesa Website" class="portfolio__img">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__title">Diesa Website</h3>
+                    </div>
+                </div>
+
+                <!-- App -->
+                <div class="portfolio__item" data-category="app">
+                    <img src="assets/whatsapp-bot.png" alt="Whatsapp Bot" class="portfolio__img">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__title">Whatsapp Bot</h3>
+                    </div>
+                </div>
+                <div class="portfolio__item" data-category="app">
+                    <img src="assets/afk-bot.png" alt="AFK Bot" class="portfolio__img">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__title">AFK Bot</h3>
+                    </div>
+                </div>
+                <div class="portfolio__item" data-category="app">
+                    <img src="assets/draw-unlock.png" alt="Draw Unlock App" class="portfolio__img">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__title">Draw Unlock App</h3>
+                    </div>
+                </div>
+                
+                <!-- AI & ML -->
+                <div class="portfolio__item" data-category="ai-ml">
+                    <img src="assets/chess-bot.png" alt="Chess Piece Detector" class="portfolio__img">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__title">Chess Piece Detector</h3>
+                    </div>
+                </div>
+                <div class="portfolio__item" data-category="ai-ml">
+                    <img src="assets/robosign.png" alt="Robo Sign" class="portfolio__img">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__title">Robo Sign</h3>
+                    </div>
+                </div>
+                <div class="portfolio__item" data-category="ai-ml">
+                    <img src="assets/crop-recommendation.png" alt="Crop Recommendation System" class="portfolio__img">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__title">Crop Recommendation</h3>
+                    </div>
+                </div>
+                <div class="portfolio__item" data-category="ai-ml">
+                    <img src="assets/yolo.png" alt="YOLO Object Detection" class="portfolio__img">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__title">YOLO Object Detection</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section">
+            <div class="cta__container container text-center animation-element">
+                <h2 class="cta__title">I'm Available For Freelance Projects.</h2>
+                <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section__title text-center animation-element">Contact Me</h2>
+            <div class="contact__container container">
+                <form id="contact-form" action="https://formspree.io/f/movnywqd" method="POST" class="contact__form animation-element">
+                    <div class="form__group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea name="message" placeholder="Your Message" rows="7" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <p id="form-status" class="animation-element"></p>
+                <div class="social-links animation-element">
+                    <h3 class="social-links__title">Follow Me</h3>
+                    <div class="social-links__list">
+                        <a href="https://www.linkedin.com/in/ayush-raj-20ba1249/" target="_blank" class="social-links__link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/RaAyushJ" target="_blank" class="social-links__link" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" class="social-links__link" title="LeetCode"><i class="fas fa-code"></i></a>
+                        <a href="https://www.instagram.com/its_ayushfr/" target="_blank" class="social-links__link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/917979894593" target="_blank" class="social-links__link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2024 Mr. Ayush Raj. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    <script type="module" src="/index.tsx"></script>
+    
+</body>
+</html>
