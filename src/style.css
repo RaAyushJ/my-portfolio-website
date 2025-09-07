@@ -1,6 +1,4 @@
-/* =================== GOOGLE FONTS =================== */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import "tailwindcss";
 
 /* =================== CSS VARIABLES =================== */
 :root {
@@ -276,7 +274,7 @@ img {
 .about.section {
     position: relative;
     padding: 10rem 0;
-    background-image: url('assets/background1.png');
+    background-image: url('./assets/background1.png');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;

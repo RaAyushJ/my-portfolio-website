@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/style.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -59,12 +59,12 @@
                     <h1 class="hero__title">Ayush</h1>
                     <p class="hero__subtitle">A Full-Stack Developer & AI/ML Engineer</p>
                     <div class="hero__buttons animation-element">
-                        <a href="assets/my-cv.pdf" download class="btn btn-primary">Download CV</a>
+                        <a href="/my-cv.pdf" download class="btn btn-primary">Download CV</a>
                         <a href="#portfolio" class="btn btn-secondary">My Work</a>
                     </div>
                 </div>
                 <div class="hero__image-wrapper animation-element">
-                    <img src="assets/profileimg1.png" alt="Ayush Raj" class="hero__image">
+                    <img src="/profileimg1.png" alt="Ayush Raj" class="hero__image">
                     <div class="hero__image-overlay"></div>
                 </div>
             </div>
@@ -193,7 +193,6 @@
                     <p class="stat__label">Industry Certifications</p>
                 </div>
             </div>
-
             <div class="stats__container stats__container--secondary container grid">
                 <div class="stat__item text-center animation-element">
                     <i class="fas fa-rocket stat__icon"></i>
@@ -218,63 +217,45 @@
             </div>
             <div class="portfolio__container container grid">
                 <!-- Web Design -->
-                <div class="portfolio__item" data-category="web">
-                    <img src="assets/caption-generator.png" alt="Caption Generator" class="portfolio__img">
-                    <div class="portfolio__overlay">
-                        <h3 class="portfolio__title">Caption Generator</h3>
-                    </div>
+                <div class="portfolio__item" data-category="web" data-link="https://github.com/RaAyushJ/InstaCaptionAI">
+                    <img src="/caption-generator.png" alt="Caption Generator" class="portfolio__img">
+                    <div class="portfolio__overlay"><h3 class="portfolio__title">Caption Generator</h3></div>
                 </div>
-                <div class="portfolio__item" data-category="web">
-                    <img src="assets/diesa.png" alt="Diesa Website" class="portfolio__img">
-                    <div class="portfolio__overlay">
-                        <h3 class="portfolio__title">Diesa Website</h3>
-                    </div>
+                <div class="portfolio__item" data-category="web" data-link="https://github.com/RaAyushJ/diesa">
+                    <img src="/diesa.png" alt="Diesa Website" class="portfolio__img">
+                    <div class="portfolio__overlay"><h3 class="portfolio__title">Diesa Website</h3></div>
                 </div>
 
                 <!-- App -->
-                <div class="portfolio__item" data-category="app">
-                    <img src="assets/whatsapp-bot.png" alt="Whatsapp Bot" class="portfolio__img">
-                    <div class="portfolio__overlay">
-                        <h3 class="portfolio__title">Whatsapp Bot</h3>
-                    </div>
+                <div class="portfolio__item" data-category="app" data-link="https://github.com/RaAyushJ/Whatsapp-Bot">
+                    <img src="/whatsapp-bot.png" alt="Whatsapp Bot" class="portfolio__img">
+                    <div class="portfolio__overlay"><h3 class="portfolio__title">Whatsapp Bot</h3></div>
                 </div>
-                <div class="portfolio__item" data-category="app">
-                    <img src="assets/afk-bot.png" alt="AFK Bot" class="portfolio__img">
-                    <div class="portfolio__overlay">
-                        <h3 class="portfolio__title">AFK Bot</h3>
-                    </div>
+                <div class="portfolio__item" data-category="app" data-link="https://github.com/RaAyushJ/AFK-Dragon">
+                    <img src="/afk-bot.png" alt="AFK Bot" class="portfolio__img">
+                    <div class="portfolio__overlay"><h3 class="portfolio__title">AFK Bot</h3></div>
                 </div>
-                <div class="portfolio__item" data-category="app">
-                    <img src="assets/draw-unlock.png" alt="Draw Unlock App" class="portfolio__img">
-                    <div class="portfolio__overlay">
-                        <h3 class="portfolio__title">Draw Unlock App</h3>
-                    </div>
+                <div class="portfolio__item" data-category="app" data-link="https://github.com/RaAyushJ/DrawUnlock">
+                    <img src="/draw-unlock.png" alt="Draw Unlock App" class="portfolio__img">
+                    <div class="portfolio__overlay"><h3 class="portfolio__title">Draw Unlock App</h3></div>
                 </div>
                 
                 <!-- AI & ML -->
-                <div class="portfolio__item" data-category="ai-ml">
-                    <img src="assets/chess-bot.png" alt="Chess Piece Detector" class="portfolio__img">
-                    <div class="portfolio__overlay">
-                        <h3 class="portfolio__title">Chess Piece Detector</h3>
-                    </div>
+                <div class="portfolio__item" data-category="ai-ml" data-link="https://github.com/RaAyushJ/ChessScannerAI">
+                    <img src="/chess-bot.png" alt="Chess Piece Detector" class="portfolio__img">
+                    <div class="portfolio__overlay"><h3 class="portfolio__title">Chess Piece Detector</h3></div>
                 </div>
-                <div class="portfolio__item" data-category="ai-ml">
-                    <img src="assets/robosign.png" alt="Robo Sign" class="portfolio__img">
-                    <div class="portfolio__overlay">
-                        <h3 class="portfolio__title">Robo Sign</h3>
-                    </div>
+                <div class="portfolio__item" data-category="ai-ml" data-link="https://github.com/RaAyushJ/SignLanguage">
+                    <img src="/robosign.png" alt="Robo Sign" class="portfolio__img">
+                    <div class="portfolio__overlay"><h3 class="portfolio__title">Robo Sign</h3></div>
                 </div>
-                <div class="portfolio__item" data-category="ai-ml">
-                    <img src="assets/crop-recommendation.png" alt="Crop Recommendation System" class="portfolio__img">
-                    <div class="portfolio__overlay">
-                        <h3 class="portfolio__title">Crop Recommendation</h3>
-                    </div>
+                <div class="portfolio__item" data-category="ai-ml" data-link="https://github.com/RaAyushJ/Crop-recommendation-">
+                    <img src="/crop-recommendation.png" alt="Crop Recommendation System" class="portfolio__img">
+                    <div class="portfolio__overlay"><h3 class="portfolio__title">Crop Recommendation</h3></div>
                 </div>
-                <div class="portfolio__item" data-category="ai-ml">
-                    <img src="assets/yolo.png" alt="YOLO Object Detection" class="portfolio__img">
-                    <div class="portfolio__overlay">
-                        <h3 class="portfolio__title">YOLO Object Detection</h3>
-                    </div>
+                <div class="portfolio__item" data-category="ai-ml" data-link="https://github.com/RaAyushJ/Yolo">
+                    <img src="/yolo.png" alt="YOLO Object Detection" class="portfolio__img">
+                    <div class="portfolio__overlay"><h3 class="portfolio__title">YOLO Object Detection</h3></div>
                 </div>
             </div>
         </section>
@@ -318,8 +299,8 @@
         </div>
     </footer>
     
-    <script src="script.js"></script>
-    <script type="module" src="/index.tsx"></script>
+    <script src="/src/script.js"></script>
+    <script type="module" src="/src/index.tsx"></script>
     
 </body>
 </html>

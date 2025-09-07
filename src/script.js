@@ -130,4 +130,14 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+
+    // Portfolio item links (RESTORED)
+    document.querySelectorAll('.portfolio__item').forEach(item => {
+        item.addEventListener('click', () => {
+            const link = item.dataset.link;
+            if (link) {
+                window.open(link, '_blank'); // Opens the link in a new tab
+            }
+        });
+    });
 });
