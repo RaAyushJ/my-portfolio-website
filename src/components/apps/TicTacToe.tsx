@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
+interface TicTacToeProps {
+  onExit: () => void;
+}
+
 type Player = 'X' | 'O';
 type SquareValue = Player | null;
+
 
 const calculateWinner = (squares: Array<SquareValue>): Player | null => {
   const lines = [

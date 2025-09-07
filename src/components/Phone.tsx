@@ -22,11 +22,11 @@ const Phone: React.FC = () => {
     switch (activeApp) {
       case AppType.TicTacToe:
         // Assuming your apps have an onExit prop
-        return <TicTacToe />; 
+        return <TicTacToe onExit={goHome} />; 
       case AppType.Chatbot:
-        return <PlaceholderApp appName="Chatbot" />;
+        return <PlaceholderApp appName="Chatbot" onExit={goHome} />;
       case AppType.Chess:
-        return <Chess />;
+        return <Chess onExit={goHome} />;
       case AppType.HomeScreen:
       default:
         return <HomeScreen openApp={openApp} onMenuToggle={setIsMenuOpen} />;
